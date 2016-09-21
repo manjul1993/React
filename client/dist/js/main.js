@@ -26153,6 +26153,9 @@ var About=React.createClass(
       })
 
 module.exports=About;
+
+
+//homepage
 },{"react":232}],236:[function(require,module,exports){
 var React=require('react');
 var Movieposter=require('./Movieposter.js');
@@ -26162,14 +26165,14 @@ var Modal=require('./Modal.js');
 var Favmovie=React.createClass(
       {displayName: "Favmovie",
         getInitialState: function() {
-                      return {status:false};
+                      return {status:false};//initial state
        },
         changestatus:function()
         {
-                  this.setState({status:true});
+                  this.setState({status:true});//changing state
         },
         delete:function(){
-                        this.props.delete(this.props.imdbId);
+                        this.props.delete(this.props.imdbId);//deleting via one imdbid
         },
 
          render:function(){
@@ -26526,8 +26529,9 @@ var NavLink=React.createClass(
                 return React.createElement(Link, React.__spread({},  this.props, {activeClassName: "active"}))
           }
       })
-      
+
   module.exports=NavLink;
+//for creating a  active link
 },{"react":232,"react-router":81}],247:[function(require,module,exports){
 var React=require('react');
 var {Link}=require('react-router');
@@ -26562,7 +26566,7 @@ var Navbar=React.createClass(
                   			)
                   		)
                   	)
-                  )//end of container
+                  )
                 )
           }
       })
@@ -26580,7 +26584,7 @@ var Searchbar=React.createClass(
            storeData:function(e){
                 console.log("i am coming in");
 
-              this.setState({data1: e.target.value});
+              this.setState({data1: e.target.value});//setting the state fo search bar
               console.log(this.state.data1);
 
            },

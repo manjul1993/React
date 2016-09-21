@@ -9,7 +9,7 @@ var Searchbar=React.createClass(
            storeData:function(e){
                 console.log("i am coming in");
 
-              this.setState({data1: e.target.value});
+              this.setState({data1: e.target.value});//setting the state fo search bar
               console.log(this.state.data1);
 
            },

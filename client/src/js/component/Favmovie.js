@@ -6,14 +6,14 @@ var Modal=require('./Modal.js');
 var Favmovie=React.createClass(
       {
         getInitialState: function() {
-                      return {status:false};
+                      return {status:false};//initial state
        },
         changestatus:function()
         {
-                  this.setState({status:true});
+                  this.setState({status:true});//changing state
         },
         delete:function(){
-                        this.props.delete(this.props.imdbId);
+                        this.props.delete(this.props.imdbId);//deleting via one imdbid
         },
 
          render:function(){

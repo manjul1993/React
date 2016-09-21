@@ -8,5 +8,6 @@ var NavLink=React.createClass(
                 return <Link {...this.props} activeClassName="active"/>
           }
       })
-      
+
   module.exports=NavLink;
+//for creating a  active link
